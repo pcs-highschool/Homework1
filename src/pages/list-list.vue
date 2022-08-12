@@ -1,17 +1,12 @@
 <template>
   <div class="main">
     <hr>
-    <h1 class="pageTitle">Today List</h1>
+    <h1 class="pageTitle">User List</h1>
     <ul class="board">
-      <li v-for="(data,i) in this.$musicList" :key="i">
-        <router-link class="boardLinks" :to="{ name : 'detailPage', params:{
-         pageId : i,
+      <li v-for="(data,i) in this.$userList" :key="i">
+        <router-link class="boardLinks" :to="{ name : 'userProfile', params:{
+         userId : i,
         }}">
-          <img :src="data.img" alt="">
-          <div>
-            <span>{{data.title}}</span>
-            <span>{{data.singer}}</span>
-          </div>
         </router-link>
       </li>
     </ul>

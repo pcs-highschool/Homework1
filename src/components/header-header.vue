@@ -1,26 +1,17 @@
 <template>
   <div class="amuz-card">
     <h1>
-        MY MUSIC
+        User List
     </h1>
     <ul class="menu">
         <li>
             <router-link class="links" :to="{name : 'home'}">HOME</router-link>
         </li>
         <li>
-            <router-link class="links" :to="{name : 'about'}">ABOUT</router-link>
-        </li>   
-        <li>
-            <router-link class="links" :to="{name : 'board'}">PLAY LIST</router-link>
+            <router-link class="links" :to="{name : 'user-list'}">USER LIST</router-link>
         </li>
         <li>
-            <router-link class="links" :to="{name : 'show'}">SHOW</router-link>
-        </li>
-        <li>
-            <router-link class="links" :to="{name : 'contact'}">CONTACT</router-link>
-        </li>
-        <li>
-            <router-link class="links" :to="{name : 'detailPage'}">DETAIL</router-link>
+            <router-link class="links" :to="{name : 'userProfile'}">USER PROFILE</router-link>
         </li>
     </ul>
   </div>
